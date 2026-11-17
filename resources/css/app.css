@@ -3,7 +3,38 @@
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
+/* colores, fuente y radios del mockup de figma */
+/* cada --color-x se usa en las vistas como bg-x, text-x o border-x */
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    /* fuente inter (se carga en vite.config.js) */
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+    /* fondo gris muy claro de las paginas */
+    --color-fondo: #f8fafc;
+    /* bordes de tarjetas, campos y barra */
+    --color-linea: #e2e8f0;
+    /* texto principal */
+    --color-tinta: #0f172a;
+    /* texto secundario gris */
+    --color-apagado: #64748b;
+    /* fondo del chip de extension */
+    --color-chip: #f1f5f9;
+
+    /* morado principal: botones, enlaces y logo */
+    --color-primario: #4f46e5;
+    /* morado mas oscuro para el hover */
+    --color-primario-fuerte: #4338ca;
+    /* morado muy claro para el chip de modo */
+    --color-primario-suave: #eef2ff;
+
+    /* rojo de eliminar y de errores */
+    --color-peligro: #dc2626;
+    --color-peligro-suave: #fef2f2;
+
+    /* verde del aviso de exito */
+    --color-exito: #16794a;
+    --color-exito-suave: #e7f8ef;
+
+    /* esquinas de las tarjetas (se usa como rounded-tarjeta) */
+    --radius-tarjeta: 12px;
 }
